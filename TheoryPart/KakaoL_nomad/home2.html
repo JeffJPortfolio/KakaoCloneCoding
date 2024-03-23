@@ -1,0 +1,59 @@
+<!-- Always start by declaring that it is html type-->
+<!DOCTYPE html>
+<!-- then <html>. <html langs = "language"> telling browser main language it will be rendered in -->
+<html langs="eng">
+<!-- head is where you configure, set settings and title is unique tag for header.
+    Everything  in header is invisible on the site.-->
+    <head>
+        <link rel="shortcut icon" sizes=" "16x16 32x32 64x64" href="voli.jpg"/>
+        <title>Home - My first  website. </title>
+
+        <meta name="descrition" content="This is my website" />
+        <!-- charset meta tag tells browser how to render txts -->
+        <meta charset="utf-8"/> 
+    </head>
+
+    <body>
+        <h1>
+            Hello!
+        </h1> 
+        <a href="https://google.com" target="_blank">Click here to go to Google </a>
+        <img src="voli.jpg" />
+
+        <!--Use MDN(developer.modzila.org) for attribute ref.
+        top use Ctrl+v to edit both side of <attribute> </attribute>-->
+        <!-- <p> for paragraph-->
+        <p>My name is <abbr title="Jeff HyunOh Jeon">JHOH</abbr> </p>
+        <audio controls="enabled" 
+            autoplay="disabled"
+            src="aud.mp3">
+        </audio>
+
+        <form>
+            <input type="file" accept=".png">
+            <input type="file" accept="image/*, .pdf">
+            <input placeholder="First NAME" type="text"/>
+            <input placeholder="Last NAME" disabled type="text"/>
+            <input required placeholder="ID" type="text"/>
+            <input required placeholder="Password" type="text"/>
+            <input type="submit" value="Create Account">
+
+        <div>
+            <input type="submit" Disabled value="Create Yay">
+        </div>
+            <!--<lable> pairs with <input> and lable should have for attribuite while ID should have id attribute and both for and id should have smame ""-->
+            <!-- id can be added to anything insdie body because it is an unique identifier. There can only be 1 id per element-->
+        <div>
+            <label for="profile">Profile Photo</label>
+            <input id="profile" type="file" accept="image/*">
+        </div>
+
+        <div>
+            <label for="first-name"First NAME></label>
+            <input id="first-name" required placeholder="First NAME" type="text"/>
+        </div>
+        <!--everything can be write with <div id=""> which is same as <""></"">-->
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html langs="eng">
+    <head>
+        <title>DietPepsiBear Times </title>
+        <style>
+            /*Rule of flex
+            1. do not talk to the children element only talk the parents
+            2. main axis 
+            3. cross axis  */           
+            body {
+                /*vh = viewpor/screen*/
+                height: 100vh;
+                margin: 20px;
+                /*have claim that display is flex inorder to talk to the parent*/
+                display: flex;
+                justify-content: space-between;
+                /*by default flex-direction control row, horizontal and by setting it to column now main and cross axis switch/flip each other*/
+                /*
+                flex-direction: column;
+                */
+                align-items: center;
+                flex-wrap: wrap;
+
+            }
+
+            div {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                /*inline block is not created to be responsive design, different size*/
+                width: 300px;
+                height: 300px;
+                background-color: teal;
+            }
+
+            #second {
+                background-color: wheat;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--body is the parent of div-->
+        <!--if we do not declare div as a flex, 1,2, and 3, will not be affected bny flex placement because body's decleration as flex won't affect div since dive is child.
+        So we have to declare div as a flex container  to control item 1,2, and 3-->
+        <div>1</div>
+        <div id="second">2</div>
+        <div>3</div>
+
+    </body>
+</html>

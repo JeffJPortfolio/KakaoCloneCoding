@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html langs="eng">
+    <head>
+        <title>DietPepsiBear Times </title>
+        <style>
+            /*Rule of flex
+            1. do not talk to the children element only talk the parents
+            2. main axis 
+            3. cross axis  */           
+            body {
+                height: 1000vh;
+                margin: 20px;
+            }
+
+            div {
+                /*
+                position: fixed;
+                */
+                width: 300px;
+                height: 300px;
+                color: white;
+                background-color: teal;
+            }
+
+
+            #diff {
+                /*by using fixed diff and div are on different layer*/
+                top: 5px;
+                position: fixed;
+                background-color: wheat;
+                width: 350px;
+                opacity: 0.2;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div id="diff"></div>
+    </body>
+</html>

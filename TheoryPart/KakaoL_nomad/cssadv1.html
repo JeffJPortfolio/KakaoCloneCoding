@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html langs="eng">
+    <head>
+        <title>DietPepsiBear Times </title>
+        <style>
+        @keyframes CoinFlip  {
+            /*from {} to {} can be used when doing only 1 step*/
+            0% {
+                transform: rotateX(0);
+            }
+            50% {
+                transform: rotateX(1800deg) translateX(100px);
+            }
+            100% {
+                transform: rotateX(0) translateX(0px);
+            }
+        }
+        
+        a {
+            color: white;
+            background-color: tomato;
+            text-decoration: none;
+            padding: 3px 5px;
+            border-radius: 5px;
+            font-size: 50px;
+            /*when we write transition: all it is saying apply transition to anything that is changing
+            In this case color and back ground color.
+            Transition should be on the root element not on the state
+            When you want to change multiple at diffently add comma at the end transition: element time rate,*/
+            transition: all 5s ease-in-out;
+        }
+        a:hover {
+             color: tomato;
+             background-color: wheat;
+        }
+
+        img {
+            border: 5px solid black;
+            border-radius: 50%;
+            animation: CoinFlip 5s ease-in-out infinite;
+            /*transform: translate is used when you want to move the element without affecting box of different element*/
+        }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="#">Go home</a>
+            <img src="voli.jpg"/>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html langs="eng">
+    <head>
+        <title>DietPepsiBear Times </title>
+        <style>
+            /*Rule of flex
+            1. do not talk to the children element only talk the parents
+            2. main axis 
+            3. cross axis  */           
+            body {
+                height: 1000vh;
+                margin: 20px;
+            }
+
+            div {
+                /*
+                position: fixed;
+                */
+                width: 300px;
+                height: 300px;
+                background-color: black;
+                position: relative;
+            }
+
+            .green {
+                background-color: teal;
+                height: 100px;
+                /*by doing position: reletive; element moves relevent to where it started
+                absolute is relevtive to nearest reletive parent if not to body*/
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="green"></div> 
+        </div>
+    </body>
+</html>

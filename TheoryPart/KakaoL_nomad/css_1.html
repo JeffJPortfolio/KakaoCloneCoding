@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html langs="eng">
+    <head>
+        <title>DietPepsiBear Times </title>
+        <!--best way is to have file seperate from html but for theory we will write it on same page-->
+        <style>
+            /* tag {
+                property: value;
+                }
+            CSS is cascading, meaning reading from top to bottom, therefore when a tag have a conflicting property what comes later is dominant*/
+            html {
+                background-color: beige;
+            }
+            /*magin: 1 value = applies all. 2 values= top&bottom left&right. 4 values=top right bottom left
+            ***collapsing margin, when top and bottom of the margin of different block are same, they become one */
+            * { /* applies to everything, body, div, and etc*/
+                border: 2px dotted black;
+            }
+            
+            body {
+                margin: 0px;
+                padding: 20px;
+                background-color:thistle;
+            }
+            
+            div {
+                padding: 10px;
+                border: 2px solid black;
+            }
+
+            #first {
+                background-color: whitesmoke;
+                width: 150px;
+                height: 150px;
+            }
+            #second {
+                background-color: teal;
+                width: 100px;
+                height: 100px;
+            }
+            #third {
+                background-color: wheat;
+                width: 50px;
+                height: 50px;
+            }
+            #fourth {
+                background-color: blanchedalmond;
+                width: 25px;
+                height: 25px;
+            }
+            span {
+                border-style : dashed;               
+            }
+            /* possible to change display property from block to inline and vice versa.
+            inline does nmot have heigh and width*/
+        </style>
+
+
+    </head>
+
+    <body>
+        <!--block does not allowed next to it while inline (span, link, images) can be next to each other.
+            block has 3 property: margin, border, padding.
+                1.margin = space from the border of the box to the outside
+                2.border = 
+                3.padding = space from the border of the box to the insdie
+        -->
+        <div id="first">
+            <div id="second">
+                <div id="third">
+                    <div id="fourth">
+                        <span>hello</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <a href="#">link</a>
+        <span>hello</span>
+        <img src="voli.jpg" />
+    </body>
+</html>

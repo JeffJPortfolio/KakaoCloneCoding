@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html langs="eng">
+    <head>
+        <title>DietPepsiBear Times </title>
+        <style>
+            /*Rule of flex
+            1. do not talk to the children element only talk the parents
+            2. main axis 
+            3. cross axis  */           
+            body {
+                height: 1000vh;
+                margin: 20px;
+            }
+
+
+            span {
+                background-color: tomato;
+            }
+
+            
+            /* span: :last-child, span: first-child: it is self explained
+            within span:nth-child(), I can even put even, odd, and equation such as 3n+1, as the vallue*/
+            span:nth-child(2),
+            span:nth-child(4) {
+                background-color: teal;
+            }
+
+            /* parent children connection between two class for ex)
+            div span{} is infering span that is children to div
+            few sign can be used to show relation and restriction to the setting
+            div > span span that is direct child of div
+            div + span span that is immidiate brother to div
+            div ~ span span that is brother to div*/
+
+            input {
+                border: 1px solid wheat;
+            }
+            input:optional {
+                border: blue;
+            }
+            /*making item with attribute required to change*/
+            input:required {
+                border: 1px solid tomato;
+            }
+
+            /*any attribute can be selected such as placeholder
+            *** ~= (name) means anything that contains the (name)*/
+            input[type="password"] {
+                background-color: thistle;
+            }
+            button:active {
+                background-color: tomato;
+            }
+            :root {
+                --main-color: #fcce00; 
+                --default-border:var(--default-border) 1px solid var(--main-color);
+                /*to use root, use as following ex) color: var(--main-color); */
+            }
+            p {
+                /*color: rgba(000. 000, 000, 000) last value for transperency ranging from 0~1*/
+                color: #fcce00;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            
+            <span>hello</span>
+            <span>hello</span>
+            <span>hello</span>
+            <span>hello</span>
+            <span>hello</span>
+            
+            <input type="text" placeholder="username"/>
+            <input type="password" required placeholder="password"/>
+
+            <button>Hello</button>
+        </div>
+    </body>
+</html>
