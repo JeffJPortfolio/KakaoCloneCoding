@@ -1,0 +1,43 @@
+<!--most web server look for index.html as default-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DPBTalk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column"></div>
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        <div class="status-bar__column"></div>
+            <span>18:43</span>
+        <div class="status-bar__column"></div>
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-bolt"></i>
+    </div>
+
+    <header class="welcom-header">
+        <h1 class="welcom-header__tittle">Welcome to DPBTalk</h1>
+        <p class="welcom-header__text">
+            If you have DPBTalk account, log in with your email or phonenumber.
+        </p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number" />
+        <input type="password" placeholder="Password" />
+        <input type="submit" value="Log In" />
+        <input type="submit" value="Sign Up" />
+        <a href="#">Find DPBTalk Account or Password</a> 
+    </form>
+
+    <script src="https://kit.fontawesome.com/2700027ef4.js"
+     crossorigin="anonymous">
+    </script>
+</body>
+</html>
