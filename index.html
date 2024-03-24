@@ -30,9 +30,10 @@
         </p>
     </header>
 
-    <form id="login-form">
-        <input type="text" placeholder="Email or phone number" />
-        <input type="password" placeholder="Password" />
+    <!--method="post" publish the information while get bring data from DB-->
+    <form action="friends.html" method="get"  id="login-form">
+        <input name="username" type="text" placeholder="Email or phone number" />
+        <input name="password" type="password" placeholder="Password" />
         <input type="submit" value="Log In" />
         <input type="submit" value="Sign Up" />
         <a href="#">Find DPBTalk Account or Password</a> 
