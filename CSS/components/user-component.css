@@ -47,6 +47,13 @@
     font-weight: 400;
 }
 
+
 .user-component__column {
     align-content: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.user-component__time {
+    margin-bottom: 10px;
+    display: block;
 }
